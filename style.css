@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/herringbone.png);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px 50px;
+    height: 100%;
+}
+
+.container {
+    min-height: 600px;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+.header {
+    padding: 30px;
+    background-color: #0e8bc9;
+    font: bold 1.4em/20px 'Times New Roman', serif;
+    color: white;
+}
+
+.main {
+    margin: 10px;
+}
+
+.list ul {
+    width: 300px;
+    margin: 15px auto;
+    list-style: none;
+}
+
+.list a {
+    display: block;
+    background-color: #1ef04c;
+    color: black;
+    text-decoration: none;
+    font: bold 25px/20px 'Times New Roman', serif;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.list ul li a:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #1ef04c;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Footer */
+footer {
+    padding: 10px 0;
+    width: 100%;
+    background-color: #0e8bc9;
+    color: white;
+    text-align: center;
+    bottom: 0px;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 1290px) {
+    .header {
+        font: bold 1em/20px 'Times New Roman', serif;
+    }
+}
+
+@media (max-width: 970px) {
+    .header {
+        font: bold 0.7em/20px 'Times New Roman', serif;
+    }
+}
+
+@media (max-width:730px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        min-height: 500px;
+        width: 100%;
+        margin: auto;
+        background-color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .header {
+        font: bold 0.5em/20px 'Times New Roman', serif;
+    }
+
+    .list ul {
+        width: 190px;
+        margin: 10px auto;
+    }
+
+    .list a {
+        font: bold 15px/20px 'Times New Roman', serif;
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        font-size: 14px;
+        margin: 10px 15px;
+    }
+
+    .container {
+        min-height: 500px;
+        width: 100%;
+        margin: auto;
+        background-color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .header {
+        font: bold 0.5em/20px 'Times New Roman', serif;
+    }
+
+    .list ul {
+        width: 190px;
+        margin: 10px auto;
+    }
+
+    .list a {
+        font: bold 15px/20px 'Times New Roman', serif;
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
