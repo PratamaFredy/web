@@ -15,11 +15,11 @@
   }
 
   function setup() {
-    canvas=createCanvas(320, 260);
+    canvas=createCanvas(300, 260);
       canvas.parent('cek');
     // Create the video
     video = createCapture(VIDEO);
-    video.size(320, 240);
+    video.size(300, 240);
     video.hide();
 
     flippedVideo = ml5.flipImage(video);
@@ -38,9 +38,7 @@
     textAlign(CENTER);
     text(label, width / 2, height - 4);
   }
-  function windowResized() {
-    resizeCanvas(320, 260);
-  }
+
   // Get a prediction for the current video frame
   function classifyVideo() {
     flippedVideo = ml5.flipImage(video)
